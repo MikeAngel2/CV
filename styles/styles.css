@@ -1,0 +1,27 @@
+h1, h1, h3, h4, h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Title Section */
+#Title{
+  background-color: #DAF7A6;
+  text-align: center;
+
+}
+
+.container-fluid{
+  padding: 3% 15% 7%;
+}
+
+.Experience-Web{
+border: 1px solid black;
+}
+
+.Experience{
+/* border: 2px solid black; */
+}
+
+.Experience-QA {
+border: 1px solid black;
+}
