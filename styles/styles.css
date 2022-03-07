@@ -3,25 +3,34 @@ h1, h1, h3, h4, h5{
 }
 
 
+/* Nav Bar Section */
+.nav-item{
+  padding: 0 10px;
+}
+
 /* Title Section */
 #Title{
-  background-color: #DAF7A6;
+  background-color: #4e98b1;
   text-align: center;
 
 }
 
+.Name{
+  font-weight: 700;
+  padding: 180px 0 2rem 0;
+  color: #000;
+}
 .container-fluid{
   padding: 3% 15% 7%;
 }
 
 .Experience-Web{
 border: 1px solid black;
+background-color: #fff;
 }
 
 .Experience{
-/* border: 2px solid black; */
-}
+  background-color: #000;
+  color: #fff;
 
-.Experience-QA {
-border: 1px solid black;
 }
