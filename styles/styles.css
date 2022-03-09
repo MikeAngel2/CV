@@ -18,6 +18,10 @@ p{
   padding: 0 10px;
 }
 
+.Nav-Bar{
+  padding-bottom: 10px;
+}
+
 /* Title Section */
 #Title, #Recent_Projects{
   background-color: #4e98b1;
@@ -30,7 +34,6 @@ p{
   font-weight: 700;
   padding: 180px 0 2rem 0;
   color: #000;
-
 }
 
 
@@ -44,3 +47,5 @@ background-color: #fff;
   color: #fff;
 
 }
+
+/* Skills and Aptitudes Section */
