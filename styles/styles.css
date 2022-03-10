@@ -49,3 +49,11 @@ background-color: #fff;
 }
 
 /* Skills and Aptitudes Section */
+
+.progress-bar{
+  background-color: #38EB9B;
+}
+
+.progress{
+  height: 3px;
+}
