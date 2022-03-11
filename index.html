@@ -11,13 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&family=Outfit:wght@400;700&family=Redressed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
   <!-- Bootstrap  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Awesome Fonts Icons -->
 
   <script src="https://kit.fontawesome.com/b31c84dde1.js" crossorigin="anonymous"></script>
 
+  <!-- Tooltip enabled -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function(element) {
+        return new bootstrap.Tooltip(element);
+      });
+    });
+  </script>
 
   <!-- Local Style sheet -->
   <link rel="stylesheet" href="styles/styles.css">
@@ -31,17 +40,17 @@
       <div class="container-fluid">
 
         <!-- Nav Bar Section -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="padding: 0 0 0 200px">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="padding: 0 0 0 10%">
 
           <a class="navbar-brand" href="#">Portfolio</a>
           <div class="container-fluid Nav-Bar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#" aria-current="page"> Experience</a>
+                  <a class="nav-link" href="#" aria-current="page">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Curriculum</a>
@@ -63,7 +72,7 @@
           <div class="row">
             <div class="About_me col-lg-12" style="border: 1px solid black; background-color: #000;">
               <p>
-              <h2>About me</h2>
+              <h2>About Me</h2>
               </p>
             </div>
             <div class="col-md">
@@ -163,36 +172,40 @@
     </section>
 
     <section id="Skills and Aptitudes">
-      <!-- Tooltip Initialize -->
 
 
       <div class="container-fluid">
         <h2>Skills and Aptitudes</h2>
         <div class="row">
           <div class="col-xl-6 col-lg-6">
-            <p class"SW_QA">Software QA
+            <p data-bs-toggle="tooltip" data-bs-placement="left" title="I'm really confident in my skill as a SW QA tester, Agile methodology included!!">
+              Software QA
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </p>
-            <p>Programming
+            <p data-bs-toggle="tooltip" data-bs-placement="left" title="I have knowledge but need more experience!">
+              Programming
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </p>
-            <p>Web Developing
+            <p data-bs-toggle="tooltip" data-bs-placement="left" title="Excited to learn more in the future!">
+              Web Developing
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width:30%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </p>
           </div>
           <div class="col-xl-6 col-lg-6">
-            <p>Teamwork
+            <p data-bs-toggle="tooltip" data-bs-placement="right" title="Teamplayer all the way!">
+              Teamwork
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </p>
-            <p>Problem Solving
+            <p data-bs-toggle="tooltip" data-bs-placement="right" title="I like deconstruct everything in order to solve anything!!">
+              Problem Solving
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -200,7 +213,6 @@
           </div>
 
         </div>
-        <!-- To Be added a tooltip for each aptitud -->
 
       </div>
 
@@ -209,6 +221,9 @@
   </main>
 </body>
 
+<footer>
+  <!-- To be added social Media -->
+</footer>
 
 
 
