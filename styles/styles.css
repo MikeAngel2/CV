@@ -1,7 +1,28 @@
 /* General Styles */
 
-h1, h1, h3, h4, h5{
+body{
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5{
   font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  padding: 0 0 2rem 0;
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+h3{
+  font-weight: 300;
+}
+
+hr{
+  width: 20%;
+  border: none;
+  border-top: 20px dotted #FF7F50;
+  background: none;
 }
 
 p{
@@ -23,10 +44,9 @@ p{
 }
 
 /* Title Section */
-#Title, #Recent_Projects{
+#Title, #Recent_Projects, #Social_Media {
   background-color: #4e98b1;
   text-align: center;
-
 }
 
 /* Experience Section */
@@ -36,6 +56,9 @@ p{
   color: #000;
 }
 
+.image_Exp{
+  width: 30%;
+}
 
 .Experience-Web{
 border: 1px solid black;
@@ -56,4 +79,19 @@ background-color: #fff;
 
 .progress{
   height: 3px;
+}
+
+/* Social Medio section */
+
+.icon{
+  padding: 20px;
+  transform: scale(2);
+  color: #FFF;
+}
+
+.icon:hover{
+  color: #FF7F50;
+}
+.Social-Footer{
+
 }
